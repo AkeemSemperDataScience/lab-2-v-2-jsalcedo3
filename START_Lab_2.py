@@ -19,7 +19,8 @@ def lab2Question2(number_val):
             if next_fib > num:
                 break
             fib_seq.append(next_fib)
-    return fib_seq
+        return fib_seq
+    return fib_up_to(number_val)
 
 
 def lab2Question3(str1, str2):
