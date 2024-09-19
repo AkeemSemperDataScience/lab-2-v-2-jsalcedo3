@@ -12,7 +12,15 @@ def lab2Question1(word):
 def lab2Question2(number_val):
     # Create a function that takes in a number
     # Return a list of the fibonacci sequence up to that number
-    pass
+    def fib_up_to(num):
+        fib_seq = [0, 1]
+        while True:
+            next_fib = fib_seq[-1] + fib_seq[-2]
+            if next_fib > num:
+                break
+            fib_seq.append(next_fib)
+    return fib_seq
+
 
 def lab2Question3(str1, str2):
     # Create a function that takes in two strings - str1 and str2
