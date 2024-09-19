@@ -6,6 +6,7 @@ def lab2Question1(word):
     def is_palindrome(s):
         s = s.replace(" ", "").lower()
         return s == s[::-1] 
+    return is_palindrome(word)
 
 def lab2Question2(number_val):
     # Create a function that takes in a number
