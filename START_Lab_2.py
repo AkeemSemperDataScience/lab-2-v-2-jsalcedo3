@@ -7,6 +7,7 @@ def lab2Question1(word):
         s = s.replace(" ", "").lower()
         return s == s[::-1] 
     return is_palindrome(word)
+    pass
 
 def lab2Question2(number_val):
     # Create a function that takes in a number
