@@ -56,7 +56,7 @@ def lab2Question4(list1, list2):
             sum_list.append(list_1[num] + list_2[num])
         return sum_list
 
-    return sum_list
+    return element_wise_sum(list1, list2)
 
 
 def lab2Question5():
