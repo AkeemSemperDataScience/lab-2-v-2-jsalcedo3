@@ -37,6 +37,7 @@ def lab2Question3(str1, str2):
     # Return the number of times str2 appears in str1
     # For example if str1 = "coding is cool" and str2 = "co" then output should be 2.
     def count_string(str1, str2):
+        str1_low = str1.lower()
         return str1.count(str2)
     return count_string(str1, str2)
 
