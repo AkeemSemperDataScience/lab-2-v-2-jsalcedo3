@@ -73,13 +73,13 @@ def lab2Question5():
     password = None
 
     def getValidPassword():
-    while True:
-        password = input("Enter a password: ")
-        if isValidPassword(password):
-            print("Password is valid.")
-            return password
-        else:
-            print("Password is invalid. Please try again.")
+        while True:
+            password = input("Enter a password: ")
+            if isValidPassword(password):
+                print("Password is valid.")
+                return password
+            else:
+                print("Password is invalid. Please try again.")
 
     return password
 
