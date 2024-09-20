@@ -72,6 +72,15 @@ def lab2Question5():
     # You will need to make that function, exactly as described above. 
     password = None
 
+    def getValidPassword():
+    while True:
+        password = input("Enter a password: ")
+        if isValidPassword(password):
+            print("Password is valid.")
+            return password
+        else:
+            print("Password is invalid. Please try again.")
+
     return password
 
 def isValidPassword(password):
@@ -80,5 +89,13 @@ def isValidPassword(password):
     # - Contains at least one uppercase letter
     # - Contains at least one lowercase letter
     # - Contains at least one number
-    pass
+    if len(password) < 8:
+        return False
+    if not any(char.isupper() for char in password):
+        return False
+    if not any(char.islower() for char in password):
+        return False
+    if not any(char.isdigit() for char in password):
+        return False
+    return True
 
