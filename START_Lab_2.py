@@ -51,11 +51,10 @@ def lab2Question4(list1, list2):
         if len(list_1) != len(list_2):
             return []
         
-        result = []
+        sum_list = []
         for num in range(len(list_1)):
-            result.append(list_1[num] + list_2[num])
-        
-        return result
+            sum_list.append(list_1[num] + list_2[num])
+        return sum_list
 
     return sum_list
 
