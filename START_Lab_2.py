@@ -13,13 +13,22 @@ def lab2Question2(number_val):
     # Create a function that takes in a number
     # Return a list of the fibonacci sequence up to that number
     def fib_up_to(num):
-        fib_seq = [0, 1]
-        while True:
-            next_fib = fib_seq[-1] + fib_seq[-2]
-            if next_fib > num:
-                break
-            fib_seq.append(next_fib)
-        return fib_seq
+        fib_seq = []
+        count = 0
+        number = 1
+        f1 = 0
+        f2 = 1
+
+        if num >= 0:
+            fib_seq = [0, 1]
+            while True:
+                next_fib = fib_seq[-1] + fib_seq[-2]
+                if next_fib > num:
+                    break
+                fib_seq.append(next_fib)
+            return fib_seq
+        else:
+            return fib_seq
     return fib_up_to(number_val)
 
 
